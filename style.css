@@ -1,0 +1,577 @@
+/* Assignment 5.0 */
+/* created by: Riley Hoff */
+
+
+/* -------------------------- General ---------------------------------- */
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #4e4e56;
+    background-color: #dcd0c0;
+}
+
+body article{
+    background-color: #ffffff;
+    width: 80%;
+    margin: auto;
+        
+}
+h1{
+    padding-left: 2em;
+}
+h1.title{
+    margin: auto;
+    text-align: center;
+    padding: 0em;
+    margin-top: 4em;
+    position: relative;
+    font-size: 25pt;
+    top: 2em;
+}
+p{
+    padding: 1em 2em 1em 2em;
+}
+
+a {
+    color: #4e4e56;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 12pt;
+    display: inline-block;
+    padding-right: 1%;
+}
+/* -------------------------- Header-------------------------------- */
+header img {
+    padding: 0px;
+    margin: 0px;
+    height: 50px;
+    margin-left: 80px
+}
+header figure {
+    position: fixed;
+    top:-10px;
+    z-index: 110;
+    max-height: 40px;
+}
+/* -------------------------- NAV ---------------------------------- */
+
+nav ol {
+    position:fixed;
+    width: 96.672%;
+    top: -25px; 
+    z-index: 100;
+    background-color: #b1938b;
+    
+}
+nav ol li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 30px 40px 20px 30px;
+    float: right;
+    text-align: center;
+    border-bottom: 3px solid #4e4e56;
+}
+body nav ol li :hover{
+    border-bottom: 3px solid #da635d;
+    padding-bottom: 20px;
+}
+
+nav ol li.activePage{
+    border-bottom: 3px solid #da635d; 
+    border-left: 1px solid #dcd0c0;
+    border-right: 1px solid #dcd0c0;
+}
+nav ol li #index {
+    margin-right: 5em;
+}
+nav ol li.activePage #index {
+    margin-right: 5em;
+}
+/* --------------------------- Index ---------------------------------- */
+
+a#mail {
+    text-align: center;
+    border: 2px solid #4e4e56;
+    width: 230px;
+    padding: 0 1em;
+    margin-left: 38%; 
+    background-color: #dcd0c0;
+    display: inline-block;
+}
+h3#mail{
+    padding: 0;
+    float: right;
+}
+a#mail img#mail {
+    width: 40px;
+    float: left;
+    padding: 10px 0;
+}
+
+
+ol.home{
+    width: 100%;
+    overflow: auto;
+    margin: 0 0 2% 3%;
+    display: inline-block;
+}
+
+ol.home li{
+    list-style-type: none;
+    background-color: #dcd0c0;
+    text-align: center;
+    border: 2px solid #4e4e56;
+    width: 10%;
+    padding: 1em 0em 1em 0em;
+    margin: 2%;
+    float: left;  
+}
+div.flexslider {
+    padding: 1em;
+}
+figure #title {
+    margin: 0 0 0 26%;
+    alignment-adjust: central;
+}
+img #title {
+    width: 100%;
+}
+figcaption{
+    font-style: italic;
+    text-align: center;
+    color: #000000;
+}
+article#index{
+    margin-top: 4em;
+    padding-bottom: 2em;
+}
+/*
+ul li.slider_input h1.info{
+    position: relative;
+    bottom: 108px;
+    color: #da635d;
+    font-size: 20pt;
+    padding: 1em;
+    width: 95.111111%;
+    background-color: rgba(255,255,255,0.7);
+}
+*/
+
+/* ---------------------------Local Events---------------------------------- */
+
+div.media{
+    overflow:auto;
+    width: 98%;
+}
+ol li.local_events{
+    overflow: auto;
+    width: 100%;
+    list-style-type: none;
+}
+ol li.local_events span {
+    float: left;
+    position: relative;
+    top: -190px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 0px 0px 0px 1%;
+    width: 93%;
+    margin-left: 3%;
+}
+ol li.local_events span.time {
+    display: inline-block;
+}
+ol li.local_events span.date {
+    display: inline-block;
+}
+ol li.local_events span.location {
+    display: inline-block;
+}
+ol li.local_events span.location p {
+    display: inline-block;
+    width: 80%;
+}
+ol li.local_events span.description {
+    margin-top: 1em;
+    padding: 1%;
+    width: 92%;
+    clear: left;
+}
+
+ol li.local_events figure img{
+    width: 100%;
+}
+
+ol li.local_events span.title{
+    position: relative;
+    top: 85px;
+    color: #da635d;
+    font-size: 20pt;
+    padding: 1em 1em 1em 3%;
+    width: 91.01%;
+}
+
+
+/* ---------------------------Concerts---------------------------------- */
+
+div.media{
+    overflow:auto;
+    width: 98%;
+}
+ol li.concerts{
+    overflow: auto;
+    width: 100%;
+    list-style-type: none;
+}
+ol li.concerts span {
+    float: left;
+    position: relative;
+    top: -177px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 0px 0px 0px 1%;
+    width: 93%;
+    margin-left: 3%;
+}
+ol li.concerts span.time {
+    display: inline-block;
+}
+ol li.concerts span.date {
+    display: inline-block;
+}
+ol li.concerts span.location {
+    display: inline-block;
+}
+ol li.concerts span.location p {
+    display: inline-block;
+    width: 80%;
+}
+ol li.concerts span.description {
+    margin-top: 1em;
+    padding: 1%;
+    width: 92%;
+    clear: left;
+}
+
+ol li.concerts figure img{
+    width: 100%;
+}
+
+ol li.concerts span.title{
+    position: relative;
+    top: 85px;
+    color: #da635d;
+    font-size: 20pt;
+    padding: 1em 1em 1em 3%;
+    width: 91.01%;
+}
+
+/* ---------------------------Art---------------------------------- */
+
+div.media{
+    overflow:auto;
+    width: 98%;
+}
+ol li.art{
+    overflow: auto;
+    width: 100%;
+    list-style-type: none;
+}
+ol li.art span {
+    float: left;
+    position: relative;
+    top: -100px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 0px 0px 0px 1%;
+    width: 93%;
+    margin-left: 3%;
+}
+ol li.art span.time {
+    display: inline-block;
+}
+ol li.art span.date {
+    display: inline-block;
+}
+ol li.art span.location {
+    display: inline-block;
+}
+ol li.art span.location p {
+    display: inline-block;
+    width: 80%;
+}
+ol li.art span.description {
+    margin-top: 1em;
+    padding: 1%;
+    width: 92%;
+    clear: left;
+}
+
+ol li.art figure img{
+    width: 100%;
+}
+
+ol li.art span.title{
+    position: relative;
+    top: 85px;
+    color: #da635d;
+    font-size: 20pt;
+    padding: 1em 1em 1em 3%;
+    width: 91.01%;
+}
+ol li.art span.artist{
+    position: relative;
+    top: 85px;
+    color: #da635d;
+    padding: 1em 1em 1em 1%;
+    width: 91.01%;
+}
+
+/* ---------------------------Skate---------------------------------- */
+
+div.media{
+    overflow:auto;
+    width: 98%;
+}
+ol li.skate{
+    overflow: auto;
+    width: 100%;
+    list-style-type: none;
+}
+ol li.skate span {
+    float: left;
+    position: relative;
+    top: -66px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 0px 0px 0px 1%;
+    width: 93%;
+    margin-left: 3%;
+}
+
+ol li.skate span.description {
+    margin-top: 1em;
+    padding: 1%;
+    width: 92%;
+    clear: left;
+}
+
+ol li.skate figure img{
+    width: 100%;
+}
+
+ol li.skate span.title{
+    position: relative;
+    top: 85px;
+    color: #da635d;
+    font-size: 20pt;
+    padding: 1em 1em 1em 3%;
+    width: 91.01%;
+}
+ol li.skate span.video{
+    margin: 2em 23%;
+    width: 600px;
+}
+/* ---------------------------Snow---------------------------------- */
+
+div.media{
+    overflow:auto;
+    width: 98%;
+}
+ol li.snow{
+    overflow: auto;
+    width: 100%;
+    list-style-type: none;
+}
+ol li.snow span {
+    float: left;
+    position: relative;
+    top: -66px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 0px 0px 0px 1%;
+    width: 93%;
+    margin-left: 3%;
+}
+
+ol li.snow span.description {
+    margin-top: 1em;
+    padding: 1%;
+    width: 92%;
+    clear: left;
+}
+
+ol li.snow figure img{
+    width: 100%;
+}
+
+ol li.snow span.title{
+    position: relative;
+    top: 85px;
+    color: #da635d;
+    font-size: 20pt;
+    padding: 1em 1em 1em 3%;
+    width: 91.01%;
+}
+ol li.snow span.video{
+    margin: 2em 23%;
+    width: 600px;
+}
+
+/* ---------------------------Surf---------------------------------- */
+
+div.media{
+    overflow:auto;
+    width: 98%;
+}
+ol li.surf{
+    overflow: auto;
+    width: 100%;
+    list-style-type: none;
+}
+ol li.surf span {
+    float: left;
+    position: relative;
+    top: -66px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 0px 0px 0px 1%;
+    width: 93%;
+    margin-left: 3%;
+}
+
+ol li.surf span.description {
+    margin-top: 1em;
+    padding: 1%;
+    width: 92%;
+    clear: left;
+}
+
+ol li.surf figure img{
+    width: 100%;
+}
+
+ol li.surf span.title{
+    position: relative;
+    top: 85px;
+    color: #da635d;
+    font-size: 20pt;
+    padding: 1em 1em 1em 3%;
+    width: 91.01%;
+}
+ol li.surf span.video{
+    margin: 2em 23%;
+    width: 600px;
+}
+
+
+/* ---------------------------Form---------------------------------- */
+
+article#form {
+    margin-top: 4em;
+}
+
+#form article#main{
+    float: none;
+    margin: auto; /* because of the fixed width this centers the form */
+    text-align: left;
+    width: 600px; /* not repsonive but fixed */
+    padding: 1em;
+}
+
+article#message{
+    background-color: #989898;
+    margin: 2em;
+    padding: 1em;
+    color: #000000;
+}
+p#mailmessage{
+    font-style: italic;
+    color:#454545;
+}
+
+#form article h1{
+    color:#da635d;
+}
+
+/* need to clear any floats that may exist */
+fieldset{
+    border: 1px solid #666666;
+    clear: both;  
+}
+/* just pushes content to left side of the box. */
+fieldset.contact{
+    float: left;
+}
+/* when you look at the labels this pushes then next to the input and right
+aligns them. Display block means they are each on their own line. */
+fieldset.contact label{
+    display: block;
+    text-align: right /* pushes the text to the right where they line up */
+        /* the float left above pushes everything back to the left*/
+}
+
+fieldset.contact input{
+    width: 15em; /* works with above to be the same size for the boxes */
+    margin-bottom: 1em; 
+}
+
+fieldset.buttons{
+    border: none;
+}
+
+fieldset.wrapper {
+    border: 0;
+    margin: auto;
+}
+
+fieldset.wrapper legend {
+    color: #da635d;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+fieldset.wrapper > legend {
+    /* i only want the first legend ie if it follows the class wrapper */
+    font-size: 2em;
+}
+
+label {
+    color: #da635d;
+    display: block;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+fieldset.contact fieldset.radio label{
+    width: 7em;
+    display: inline-block;
+}
+
+fieldset.contact fieldset.radio input {
+    width: 2em;
+}
+
+fieldset.contact fieldset.radio legend {
+    font-size: 1em;
+}
+fieldset.newsletter fieldset.checkbox legend {
+    font-size: 1em;
+}
+
+fieldset.newsletter fieldset.listbox legend {
+    font-size: 1em;
+}
+
+/* style the errors in the form so they are visible */
+.mistake {
+    color: #000000;
+    background-color:#ff8c8c;
+    border: thin solid #ff0000;
+}
+
+
+/* style the list of errors that will show before the form */
+#errors ol li{
+    color: #ff5555;
+}
+
+input#btnSubmit{
+    float:right
+}
